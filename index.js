@@ -38,6 +38,10 @@ app.get('/search', function (req, res) {
   });
 });
 
+app.get('/contact', function(req, res){
+  res.render('contact.html');
+});
+
 app.get('/thumbnail', function (req, res) {
   getAccessToken().then(accessToken => {
     const videoId = req.query.videoId;
